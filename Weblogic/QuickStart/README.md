@@ -23,13 +23,13 @@ Important: Proper version naming is crucial to maintaining a working Docker imag
 $ docker build -t rmohare/wls:12.2.1.1 .
 ```
 
-After the image is built, you can verify the creation using `docker images` which should return an output similar to the following:
+After the image is built, you can verify the creation using `docker images` which should return an output similar to the following (Image IDs masked for security):
 
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-rmohare/wls         12.2.1.1            xxxxxxxxxxxx        2 minutes ago       
-rmohare/jre         8u102               xxxxxxxxxxxx        4 minutes ago       592.4 MB
-oraclelinux         latest              xxxxxxxxxxxx        4 minutes ago       278.2 MB
+rmohare/wls         12.2.1.1            xxxxxxxxxxxx        13 minutes ago      1.446 GB
+rmohare/jre         8u102               xxxxxxxxxxxx        50 minutes ago      592.4 MB
+oraclelinux         latest              xxxxxxxxxxxx        11 weeks ago        278.2 MB
 ```
 
 ## Using public Docker image
