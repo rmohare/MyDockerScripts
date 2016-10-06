@@ -16,9 +16,10 @@ ENV JAVA_PKG=server-jre-8u102-linux-x64.tar.gz \
     PATH=$PATH:/usr/java/default/bin
 
 # Add the JAVA_PKG file to the container in /usr/java location
+# NOTE: The ADD command also unzips the .tar.gz file to this location
 ADD $JAVA_PKG /usr/java
 
-# Move the JRE to the JAVA_HOME location in the container and unzip
+# Move the unzipped JRE to the JAVA_HOME location in the container
 RUN mv $(ls -1 -d /usr/java/*) $JAVA_HOME && \
     echo "JRE successfully installed - contents of $JAVA_HOME:" && \
     ls $JAVA_HOME
